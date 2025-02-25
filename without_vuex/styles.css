@@ -1,0 +1,116 @@
+/* body {
+    background-color: violet;
+} */
+
+
+/* #app {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.root {
+    height: 97vh;
+    width: 99vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 89%);
+}
+
+.main-container {
+    /* display: none;
+    justify-content: center;
+    align-items: center; */
+    background-color: white;
+    padding: 20px;
+    width: 70vw;
+    border: 1px solid rgb(126, 153, 160);
+    box-shadow: 2px 2px 20px rgb(92, 92, 92);
+    border-radius: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(208, 224, 241);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff7b00;
+    border-radius: 50px;
+    box-shadow: 0pxpx 0px 20px rgb(80, 81, 82);
+    /* width: 50px; */
+    color: white;
+    padding: 10px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-emoji {
+    font-size: 3rem;
+    /* Make the emoji big */
+    display: block;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #e66900;
+}
