@@ -1,5 +1,5 @@
 export default {
-
+  props: ['count'],
   template: `
       <div class="cart-button">
         <div>Cart </div> 

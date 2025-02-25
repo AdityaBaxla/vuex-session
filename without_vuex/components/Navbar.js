@@ -1,7 +1,9 @@
 import CartButton from "./CartButton.js"
 
-export default {
 
+
+export default {
+  props: ['cartItemCount'],
   template: `
       <div class="navbar">
         <h2>Navbar</h2>
@@ -12,3 +14,4 @@ export default {
     `,
   components: { CartButton }
 }
+

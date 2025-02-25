@@ -6,8 +6,8 @@ new Vue({
     template: `
       <div class="root">
       <div class="main-container">
-        <Navbar ></Navbar>
-        <MainBody></MainBody>
+        <Navbar :cartItemCount="cartItemCount"></Navbar>
+        <MainBody @add-to-cart="incrementCart" ></MainBody>
         </div>
       </div>
     `,
@@ -22,7 +22,7 @@ new Vue({
         }
     },
     components: {
-        MainBody,
+        "MainBody": MainBody,
         Navbar,
     }
 });
